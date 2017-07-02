@@ -1,0 +1,29 @@
+VpnChangeMtu:
+netsh interface ipv4 show subinterfaces
+netsh interface ipv4 set subinterface "云梯 VPN (L2TP)" mtu=1280 store=persistent
+
+防止DNS污染和清除DNS缓存：
+(1)设置DNS，防止DNS 污染
+选中“使用下面的 DNS 服务器地址”，“首选 DNS 服务器”中填写 8.8.8.8，“备用 DNS 服务器”中填写 8.8.4.4，然后点击“确定”按钮。
+(2)清除DNS缓存
+在“开始 -> 所有程序 -> 附件”中找到并打开“命令提示符”，输入以下命令并回车：ipconfig /flushdns。
+
+
+GoogleCloud相关配置信息
+安装CentOS7.0
+服务器IP地址->35.187.149.168
+服务器端口->8388
+密码->mgxqb
+加密->rc4-md5
+代理端口->1080
+	
+	
+由于现在试用改成1年有效期了
+选择低配是5$一个月，12个月是60$
+还剩下240$用于流量的开销
+240$/0.23 = 1043GB
+1043GB/12个月=86GB
+也就是每个月用86GB流量，个人使用也足够了
+别忘记，Google Cloud 访问Youtube是不花费流量的哦
+如何选择呢？如果只是爬墙的话，最低配没啥问题。
+
